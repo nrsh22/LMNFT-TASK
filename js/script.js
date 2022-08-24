@@ -68,14 +68,3 @@ var swiper = new Swiper(".creator-slider", {
         disableOnInteraction: false,
     },
 });
-
-// FAQ
-let faq = document.querySelectorAll('.box-faq .box');
-faq.forEach(box => {
-    box.onclick = () => {
-        faq.forEach(unbox => {
-            unbox.classList.remove('active');
-        })
-        box.classList.add('active');
-    }
-})
